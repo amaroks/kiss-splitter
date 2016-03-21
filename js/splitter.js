@@ -1,5 +1,5 @@
-angular.module('bgDirectives', [])
-  .directive('bgSplitter', function() {
+angular.module('kissDirectives', [])
+  .directive('kissSplitter', function() {
     return {
       restrict: 'E',
       replace: true,
@@ -72,10 +72,10 @@ angular.module('bgDirectives', [])
       }
     };
   })
-  .directive('bgPane', function () {
+  .directive('kissPane', function () {
     return {
       restrict: 'E',
-      require: '^bgSplitter',
+      require: '^kissSplitter',
       replace: true,
       transclude: true,
       scope: {
@@ -84,7 +84,7 @@ angular.module('bgDirectives', [])
       template: '<div class="split-pane{{index}}" ng-transclude></div>',
       link: function(scope, element, attrs, bgSplitterCtrl) {
         scope.elem = element;
-        scope.index = bgSplitterCtrl.addPane(scope);
+        scope.index = kissSplitterCtrl.addPane(scope);
       }
     };
   });
