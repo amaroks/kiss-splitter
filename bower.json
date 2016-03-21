@@ -1,9 +1,10 @@
 {
-  "name": "bg-splitter",
+  "name": "kiss-splitter",
   "version": "0.1.0",
-  "homepage": "https://github.com/blackgate/bg-splitter",
+  "homepage": "https://github.com/blackgate/kiss-splitter",
   "authors": [
-    "blackgate"
+    "blackgate",
+    "amaroks"
   ],
   "description": "Simple pane splitter for angular.js",
   "main": ["js/splitter.js", "css/style.css"],
@@ -21,6 +22,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.2.3"
+    "angular": ">=1.2.3"
   }
 }
